@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "⬇️ Pulling latest changes..."
-git pull origin main
-
 echo "🔄 Adding changes..."
 git add .
 
@@ -13,5 +10,5 @@ git commit -m "$msg"
 echo "🚀 Pushing changes..."
 git push origin main
 
-echo "✅ Done!"
+echo "✅ Done! Dana done "
 
