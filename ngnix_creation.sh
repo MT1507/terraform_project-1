@@ -11,7 +11,7 @@ sudo systemctl enable nginx
 sudo systemctl status nginx
 
 
-echo "Creating file..."
+echo "Creating file..."--version
 
 cat <<EOF > /var/www/html/index.html
 <!DOCTYPE html>
