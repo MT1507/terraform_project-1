@@ -14,7 +14,3 @@ echo "🚀 Pushing changes..."
 git push origin main
 
 echo "✅ Done!"
-
-
-
-
