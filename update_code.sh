@@ -20,5 +20,5 @@ elif [ "$choice" == "2" ]; then
     git push origin main
     echo "✅ Push completed!"
 else
-    echo "❌ Invalid option"
+    echo "❌ Invalid option , mangesh"
 fi
