@@ -14,20 +14,13 @@ echo "Commit version will be: $msg"
 
 if [ "$choice" == "1" ]; then
     echo "⬇️ Pulling latest code..."
-    git pull --rebase origin $BRANCH
+    git pull  origin $BRANCH
     echo "✅ Pull completed!"
 
 elif [ "$choice" == "2" ]; then
-    echo "⬇️ Syncing with remote..."
-    git pull --rebase origin $BRANCH
 
     echo "🔄 Adding changes..."
     git add .
-
-    if git diff --cached --quiet; then
-        echo "⚠️ No changes to commit."
-        exit 0
-    fi
 
     git commit -m "$msg"
 
