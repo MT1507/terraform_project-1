@@ -9,9 +9,7 @@ echo "1 - Pull latest code"
 echo "2 - Push local changes"
 read -p "Enter choice: " choice
 
-# Generate version with date
-msg="v:$(date +"%Y-%m-%d_%H-%M-%S")"
-
+msg="v:$(date +"%Y-%m-%d_%H-%M-%S") by $(whoami)"
 echo "Commit version will be: $msg"
 
 if [ "$choice" == "1" ]; then
@@ -32,6 +30,7 @@ elif [ "$choice" == "2" ]; then
     fi
 
     git commit -m "$msg"
+
     echo "🚀 Pushing to GitHub..."
     git push origin $BRANCH
     echo "✅ Push completed!"
@@ -39,4 +38,3 @@ elif [ "$choice" == "2" ]; then
 else
     echo "❌ Invalid option, Mangesh"
 fi
-
