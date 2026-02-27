@@ -18,16 +18,12 @@ if [ "$choice" == "1" ]; then
     echo "✅ Pull completed!"
 
 elif [ "$choice" == "2" ]; then
-
     echo "🔄 Adding changes..."
     git add .
-
     git commit -m "$msg"
-
     echo "🚀 Pushing to GitHub..."
-    git push origin $BRANCH
+    git push origin main
     echo "✅ Push completed!"
-
 else
-    echo "❌ Invalid option, Mangesh"
+    echo "❌ Invalid option , mangesh"
 fi
